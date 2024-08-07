@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>select</title>
+</head>
+<body>
+  <!--checkbox-->
+  <form action="/birds">
+    <input type="checkbox" name="agree" id="agrees" checked>
+    <label for="agrees">agrees</label>
+    <button>submit</button>
+  </form>
+  <!--radio-->
+  <form action="/birds">
+    <label for="xs">xs: </label>
+    <input type="radio" name="size" id="xs" value="xs">
+    <label for="s">s:</label>
+    <input type="radio" name="size" id="s" value="s">
+    <label for="m">m:</label>
+    <input type="radio" name="size" id="m" value="m">
+    <button>submit</button>
+  </form>
+  <!--select-->
+  <form action="/birds">
+    <label for="">Meal</label>
+    <select name="meal" id="meal">
+      <option value="fish">fish</option>
+      <option value="veg">veg</option>
+      <option value="steak">steak</option>
+    </select>
+    <button>submit</button>
+  </form>
+  <!--range-->
+  <form action="/birds">
+    <label for="">cheese</label>
+    <input type="range" id="cheese" min="0" max="100" value="60" name="cheese">
+    <button>submit</button>
+  </form>
+  <form action="/birds">
+    <label for="requests">추가요청</label>
+    <textarea id="requests" rows="5" name="requests" placeholder="order"></textarea>
+    <button>submit</button>
+  </form>
+  <!--required / minlength / maxlength-->
+  <form action="/dummy">
+    <label for="first">first Name</label>
+    <input type="text" name="first" id="first" required>
+    <label for="username">username</label>
+    <input type="text" name="username" id="username" minlength="1" maxlength="10" required>
+    <button>submit</button>
+  </form>
+</body>
+</html>
